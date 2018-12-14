@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>IVOMovies filmlijst</title>
+    <meta charset="utf-8">
+    <meta name="keywords" lang="nl" content="ivomovies,filmlijst, titel, hoofdrol, prijs" />
+	  <meta name="author" content="Ivan Dellobel" />
+    <meta name="description" content="Website IVOMovies">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/LogoIcon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../LogoIcon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+
+<!-- Gebruik van de CSS geleverd door Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../Bootstrap/css/bootstrap.min.css" />
+    <!-- Gebruik van eigen CSS-file om aanpassingen te maken -->
+    <link rel="stylesheet" type="text/css" href="../Bootstrap/css/CSSEigen.css" />
+    <!-- Gebruik van jquery -->
+    <script src="../Bootstrap/js/jquery-3.1.1.min.js"></script>
+    <!-- Gebruik van Bootstrap Script -->
+    <script src="../Bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav  class="navbar navbar-inverse navbar-fixed-top " role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">
+                  <span class="logEen"  >IVO</span>
+                  <span class="logTwee">|</span>
+                  <span class="logDrie" >Movies</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Genres<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+							<li><a href="../Albums/Actie.html">Actie</a></li>
+							<li><a href="../Albums/Animatie.html">Animatie</a></li>
+                            <li><a href="../Albums/Komedie.html">Komedie</a></li>
+                            <li><a href="../Albums/Romantiek.html">Romantiek</a></li>
+                            <li><a href="../Albums/Triller.html">Triller</a></li>
+                        </ul>
+                    </li></button>
+					
+                    <li>
+                        <a href="../Albums/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="../Albums/login.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                  <li>
+                    <form class=" navbar-form form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                      <button id="search" class="btn my-2 my-sm-0 glyphicon glyphicon-search" type="submit"></button>
+                    </form>
+                  </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <br><br> 
+      
+		
+	<div class="container-fluid">
+      <div class="row" id="filmlijstUp">
+        <div class="col-lg-6 col-sm-6 col-xs-6 text-left">
+          <ul class="pager">
+                 <li class="previous"><a href="../index.html">Terug Home</a></li>
+              </ul>
+        </div>
+        <div class="col-lg-6 col-sm-6 col-xs-6 text-right">
+          <ul class="pagination pagination-sm">
+            <li ><a href="../index.html">1</a></li>
+            <li id="2" class="active" ><a href="filmlijst.html">2</a></li>
+            <li class="disabled"><a href="#">3</a></li>
+            
+        </ul>
+        </div>
+      </div>
+    </div>  
+    
+        <div class="container" >
+            <div class="well wellbackground-filmijst" >
+                    <h2>
+                      <span class="logEen"  >IVO</span>
+                      <span class="logTwee">|</span>
+                      <span class="logDrie" >Movies</span>
+                      <span style="color: #664400;">Filmlijst</span>  </h2>
+            <div class="panel panel-default"  >
+              <div class="panel-body">
+            
+                <div class="table-responsive">  
+                    <table id="tbl_filmlijst" class="table table-condensed table-hover table-bordered table-striped">
+                      <thead>
+                        <tr class=" text-center">
+                          <th colspan="5" class=" text-center" id="actie"><h3><a href="../Albums/Actie.html">Actie</a></h3></th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <th></th>
+                            <th>Titel</th>
+                            <th>Hoofdrol</th>
+                            <th>DVD Release</th>
+                            <th>Prijs</th>
+                            
+                        </tr>
+                         <tr>
+                          <td><img src="../Images/a_ds_poster.jpg" class="img-responsive"  alt="Image" title="Doctor Strange "></td>
+                          <td id="strange"><a href="../Albums/InfoDoctorStrange.html">DOCTOR STRANGE</a></td>
+                          <td>Benedict Cumberbatch</td>
+                          <td>28 Februari 2017</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>13</span></td>
+                        </tr>
+                         
+                        <tr>
+                          <td><img src="../Images/a_ll_poster.jpg" class="img-responsive"  alt="Image" title="Life on the line "></td>
+                          <td id="line"><a href="../Albums/InfoLifeOnTheLine.html">LIFE ON THE LINE</a></td>
+                          <td>John Travolta</td>
+                          <td>7 Februari 2017</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>12</span></td>
+                        </tr>
+                        
+                        <tr>
+                          <td><img src="../Images/a_tt_poster.jpg" class="img-responsive"  alt="Image" title="The Take "></td>
+                          <td id="Take"><a href="../Albums/InfoTheTake.html">THE TAKE</a></td>
+                          <td>Idris Elba</td>
+                          <td>07 Februari 2017</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>13</span></td>
+                        </tr>
+                                            
+                        <tr>
+                          <td><img src="../Images/a_jr_poster.jpg" class="img-responsive"  alt="Image" title="JACK REACHER "></td>
+                          <td id="Reacher"><a href="../Albums/InfoJackReacher.html">JACK REACHER</a></td>
+                          <td>Tom Cruise</td>
+                          <td>31 Januari 2017</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>9</span></td>
+                        </tr>
+                        
+                        <tr>
+                          <td><img src="../Images/a_dr_poster.jpg" class="img-responsive"  alt="Image" title="DEAD RACE 2050 "></td>
+                          <td id="deadRace"><a href="../Albums/InfoDeadRace2050.html">DEAD RACE 2050</a></td>
+                          <td>Manu Bennett</td>
+                          <td>17 Januari 2017</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>11</span></td>
+                        </tr>
+                       
+                        <tr>
+                          <td><img src="../Images/a_ms_poster.jpg" class="img-responsive"  alt="Image" title="Max Steel "></td>
+                          <td id="MaxSteel"><a href="../Albums/InfoMaxSteel.html">MAX STEEL</a></td>
+                          <td>Ben Winchell</td>
+                          <td>10 Januari 2017</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>13</span></td>
+                        </tr>
+                        
+                      </tbody>
+                    
+                       <thead>
+                        <tr class=" text-center">
+                          <th colspan="5" class=" text-center" id="animatie"><h3><a href="../Albums/Animatie.html">Animatie</a></h3></th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <th></th>
+                            <th>Titel</th>
+                            <th>Hoofdrol</th>
+                            <th>DVD Release</th>
+                            <th>Prijs</th>
+                            
+                        </tr>
+                        
+                        <tr>
+                          <td><img src="../Images/AN_DI_poster.jpg" class="img-responsive"  alt="Image" title="The Good Dinosaur"></td>
+                          <td id="dino"><a href="../Albums/InfoTheGoodDinosaur.html">THE GOOD DINOSAUR</a></td>
+                          <td>Jeffrey Wright (Poppa)</td>
+                          <td>22 February 2017</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>13</span></td>
+                        </tr>
+                        
+                         <tr>
+                          <td><img src="../Images/AN_NRD_poster.jpg" class="img-responsive"  alt="Image" title="Nerdland"></td>
+                          <td id="nerd"><a href="../Albums/InfoNerdland.html">NERDLAND</a></td>
+                          <td>Paul Rudd (John)</td>
+                          <td>07 Februari 2017</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>12</span></td>
+                        </tr>
+                         
+                        <tr>
+                          <td><img src="../Images/AN_TR_poster.jpg" class="img-responsive"  alt="Image" title="Trolls"></td>
+                          <td id="troll"><a href="../Albums/InfoTrolls.html">TROLLS</a></td>
+                          <td>Anna Kendrick (Poppy)</td>
+                          <td>04 February 2017</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>13</span></td>
+                        </tr>
+                        
+                        <tr>
+                          <td><img src="../Images/AN_IC_poster.jpg" class="img-responsive"  alt="Image" title="Ice Ace Collision"></td>
+                          <td id="ice"><a href="../Albums/InfoIceAceCollision.html">ICE ACE COLLISION</a></td>
+                          <td>Keke Palmer (Peaches)</td>
+                          <td>11 Oktober 2016</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>13</span></td>
+                        </tr>
+                                            
+                        <tr>
+                          <td><img src="../Images/AN_KU_poster.jpg" class="img-responsive"  alt="Image" title="Kung Fu Panda"></td>
+                          <td id="kung"><a href="../Albums/InfoKungFuPanda.html">KUNG FU PANDA</a></td>
+                          <td>Jack Black (Po)</td>
+                          <td>28 Juni 2016</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>12</span></td>
+                        </tr>
+                                                                      
+                        <tr>
+                          <td><img src="../Images/AN_ZO_poster.jpg" class="img-responsive"  alt="Image" title="Zootopia "></td>
+                          <td id="zooto"><a href="../Albums/InfoZootopia.html">ZOOTOPIA</a></td>
+                          <td>Ginnifer Goodwin (Judy Hopps)</td>
+                          <td>07 Juni 2016</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>12</span></td>
+                        </tr>
+                        
+                      </tbody>
+                      
+                      <thead>
+                        <tr class=" text-center">
+                          <th colspan="5" class=" text-center" id="komedie"><h3><a href="../Albums/Komedie.html">Komedie</a></h3></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <th></th>
+                            <th>Titel</th>
+                            <th>Hoofdrol</th>
+                            <th>DVD Release</th>
+                            <th>Prijs</th>
+                            
+                        </tr>
+                        
+                        <tr>
+                          <td><img src="../Images/WhatNowPoster.jpg" class="img-responsive"  alt="Image" title="What Now"></td>
+                          <td id="WhatNow"><a href="../Albums/InfoWhatNow.html">WHAT NOW</a></td>
+                          <td>Kevin Hart</td>
+                          <td>10 Januari 2017</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>10</span></td>
+                        </tr>
+                                                                    
+                        <tr>
+                          <td><img src="../Images/DogEatDogPoster.jpg" class="img-responsive"  alt="Image" title="Dog eat dog"></td>
+                          <td id="Dogeat"><a href="../Albums/InfoDogEatDog.html">DOG EAT DOG</a></td>
+                          <td>Nicolas Cage</td>
+                          <td>27 December 2016</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>12</span></td>
+                        </tr>
+                        
+                        <tr>
+                          <td><img src="../Images/BrotherNaturePoster.jpg" class="img-responsive"  alt="Image" title="Brother Nature"></td>
+                          <td id="nature"><a href="../Albums/InfoBrotherNature.html">BROTHER NATURE</a></td>
+                          <td>Taran Killam</td>
+                          <td>13 December 2016</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>12</span></td>
+                        </tr>
+                                                
+                         <tr>
+                          <td><img src="../Images/NineLivesPoster.jpg" class="img-responsive"  alt="Image" title="Nine lives"></td>
+                          <td id="ninelives"><a href="../Albums/InfoNineLives.html">NINE LIVES</a></td>
+                          <td>Kevin Spacey</td>
+                          <td>01 November 2016</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>11</span></td>
+                        </tr>
+                                                                      
+                        <tr>
+                          <td><img src="../Images/BadMomsPoster.jpg" class="img-responsive"  alt="Image" title="Bad Moms "></td>
+                          <td id="moms"><a href="../Albums/InfoBadMoms.html">BAD MOMS</a></td>
+                          <td>Mila Kunis</td>
+                          <td>01 November 2016</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>12</span></td>
+                        </tr>
+                        
+                         <tr>
+                          <td><img src="../Images/SkiptracePoster.jpg" class="img-responsive"  alt="Image" title="Skiptrace"></td>
+                          <td id="skip"><a href="../Albums/InfoSkiptrace.html">SKIPTRACE</a></td>
+                          <td>Jackie Chan</td>
+                          <td>25 Oktober 2016</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>14</span></td>
+                        </tr>
+                                                
+                      </tbody>
+                      
+                      <thead>
+                        <tr class=" text-center">
+                          <th colspan="5" class=" text-center" id="Romantiek"><h3><a href="../Albums/Romantiek.html">Romantiek</a></h3></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <th></th>
+                            <th>Titel</th>
+                            <th>Hoofdrol</th>
+                            <th>DVD Release</th>
+                            <th>Prijs</th>
+                            
+                        </tr>
+                        
+                         <tr>
+                          <td><img src="../Images/RM_BeautyAndBeastPoster.jpg" class="img-responsive"  alt="Image" title="Beauty and the Beast"></td>
+                          <td id="beauty"><a href="../Albums/InfoBeautyAndTheBeast.html">BEAUTY AND THE BEAST</a></td>
+                          <td>Emma Watson</td>
+                          <td>Binnenkort beschikbaar</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>??</span></td>
+                        </tr>
+                         
+                         <tr>
+                          <td><img src="../Images/RM_RulesDontApply.poster.jpg" class="img-responsive"  alt="Image" title="Rules don't apply"></td>
+                          <td id="rules"><a href="../Albums/InfoRulesDontApply.html">RULES DON'T APPLY</a></td>
+                          <td>Lily Collins</td>
+                          <td>28 Februari 2017</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>11</span></td>
+                        </tr>
+                         
+                        <tr>
+                          <td><img src="../Images/RM_heavenSent.Poster.jpg" class="img-responsive"  alt="Image" title="Heaven Sent"></td>
+                          <td id="heaven"><a href="../Albums/InfoHeavenSent.html">HEAVEN SENT</a></td>
+                          <td>Mallory James Mahoney</td>
+                          <td>21 Februari 2017</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>4</span></td>
+                        </tr>
+                                              
+                         <tr>
+                          <td><img src="../Images/RM_FrankLola.Poster.jpg" class="img-responsive"  alt="Image" title="Frank & Lola"></td>
+                          <td id="lola"><a href="../Albums/InfoFrankLola.html">FRANK & LOLA</a></td>
+                          <td>Michael Shannon</td>
+                          <td>7 Februari 2017</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>12</span></td>
+                        </tr>
+                                                                      
+                        <tr>
+                          <td><img src="../Images/RM_SouthsideWithYouPoster.jpg" class="img-responsive"  alt="Image" title="Southside with you"></td>
+                          <td id="southside"><a href="../Albums/InfoSouthsideWithYou.html">SOUTHSIDE WITH YOU</a></td>
+                          <td>Tika Sumpter</td>
+                          <td>13 December 2016</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>13</span></td>
+                        </tr>
+                        
+                         <tr>
+                          <td><img src="../Images//RM_HighStrungPoster.jpg" class="img-responsive"  alt="Image" title="High Strung"></td>
+                          <td id="strung"><a href="../Albums/InfoHighStrung.html">HIGH STRUNG</a></td>
+                          <td>Keenan Kampa</td>
+                          <td>02 Augustus 2016</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>12</span></td>
+                        </tr>
+                                                
+                      </tbody>
+                  
+                                    <thead>
+                        <tr class=" text-center">
+                          <th colspan="5" class=" text-center" id="Triller"><h3><a href="../Albums/Triller.html">Triller</a></h3></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <th></th>
+                            <th>Titel</th>
+                            <th>Hoofdrol</th>
+                            <th>DVD Release</th>
+                            <th>Prijs</th>
+                            
+                        </tr>
+                        
+                         <tr>
+                          <td><img src="../Images/alliedposter.jpg" class="img-responsive"  alt="Image" title="Allied"></td>
+                          <td id="alliedlijst"><a href="../Albums/InfoAllied.html">ALLIED</a></td>
+                          <td>Brad Pitt</td>
+                          <td>28 Februari 2017</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>13</span></td>
+                        </tr>
+                         
+                         <tr>
+                          <td><img src="../Images/ContractToKillPoster.jpg" class="img-responsive"  alt="Image" title="Contract to kill"></td>
+                          <td id="contract"><a href="../Albums/InfoContractTokill.html">CONTRACT TO KILL</a></td>
+                          <td>Steven Seagal</td>
+                          <td>27 Februari 2017</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>11</span></td>
+                        </tr>
+                         
+                        <tr>
+                          <td><img src="../Images/TrainToBusanPoster.jpg" class="img-responsive"  alt="Image" title="Train to Busan"></td>
+                          <td id="busan"><a href="../Albums/InfoTrainToBusan.html">TRAIN TO BUSAN</a></td>
+                          <td>Yoo Gong</td>
+                          <td>17 Januari 2017</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>12</span></td>
+                        </tr>
+                                              
+                         <tr>
+                          <td><img src="../Images/infernoPoster.jpg" class="img-responsive"  alt="Image" title="Inferno"></td>
+                          <td id="infernolijst"><a href="../Albums/InfoInferno.html">INFERNO</a></td>
+                          <td>Tom Hanks</td>
+                          <td>24 januari 2017 </td>
+                          <td><span class="glyphicon glyphicon-eur "></span>10</span></td>
+                        </tr>
+                                                                      
+                        <tr>
+                          <td><img src="../Images/ussIndianapolisPoster.jpg" class="img-responsive"  alt="Image" title="USS INDIANAPOLIS"></td>
+                          <td id="inlijst"><a href="../Albums/InfoUssIndianapolis.html">USS INDIANAPOLIS</a></td>
+                          <td>Nicolas Cage</td>
+                          <td>24 Januari 2017</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>13</span></td>
+                        </tr>
+                        
+                         <tr>
+                          <td><img src="../Images//TheAccountantPoster.jpg" class="img-responsive"  alt="Image" title="THE ACCOUNTANT"></td>
+                          <td id="accountlijst"><a href="../Albums/InfoTheAccountant.html">THE ACCOUNTANT</a></td>
+                          <td>Ben Affleck</td>
+                          <td>10 Januari 2017</td>
+                          <td><span class="glyphicon glyphicon-eur "></span>15</span></td>
+                        </tr>
+                                                
+                      </tbody>
+                 
+                    </table>
+                </div>
+              
+                </div>
+            </div>        
+        </div>
+    </div>
+        
+        
+    <div class="container-fluid">
+         <!--Button page up -->
+        <div class="row text-right">
+          <div class="col-sm-12 ">
+            <a href="#filmlijstUp" title="Top">
+              <button id="top" type="button" class="btn btn-primary btn-sm back-to-top glyphicon glyphicon-chevron-up "> Top</button>
+            </a>
+          </div>
+        </div>
+    </div>
+
+       
+    
+      <!-- Footer -->
+    <footer class="container-fluid text-center">
+      <div class="col-sm-12">
+            <ol class="breadcrumb">
+              <li>&copy; 2017 IVO Brugge</li>
+              <li class="alert alert-warning"><a href="#disclaimer" data-toggle="collapse" class="alert-link">disclaimer</a></li>
+              <div id="disclaimer" class="collapse">
+                <H6 >IVOMovies is een virtuele oefenfirma. Informatie,transacties en goederen op deze website zijn fictief
+                    en hebben louter educatieve doeleinden.</H6>
+              </div>
+            </ol>
+      </div>
+    </footer>
+    
+
+    
+
+</body>
+
+</html>
+

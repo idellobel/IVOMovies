@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>IVOMovies account</title>
+</head>
+<title>IVOMovies account</title>
+    
+    <meta charset="utf-8">
+    <meta name="keywords" lang="nl" content="ivomovies,login," />
+	  <meta name="author" content="Ivan Dellobel" />
+    <meta name="description" content="Website IVOMovies">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="../images/LogoIcon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../LogoIcon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+
+<!-- Gebruik van de CSS geleverd door Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../Bootstrap/css/bootstrap.min.css" />
+    <!-- Gebruik van eigen CSS-file om aanpassingen te maken -->
+    <link rel="stylesheet" type="text/css" href="../Bootstrap/css/CSSEigen.css" />
+    <!-- Gebruik van jquery -->
+    <script src="../Bootstrap/js/jquery-3.1.1.min.js"></script>
+    <!-- Gebruik van Bootstrap Script -->
+    <script src="../Bootstrap/js/bootstrap.min.js"></script>
+
+<style>
+
+
+</style>
+
+<body>
+ !-- Navigation -->
+    <nav  class="navbar navbar-inverse navbar-fixed-top " role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">
+                  <span class="logEen"  >IVO</span>
+                  <span class="logTwee">|</span>
+                  <span class="logDrie" >Movies</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    
+                    
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Genres<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+							<li><a href="../Albums/Actie.html">Actie</a></li>
+							<li><a href="../Albums/Animatie.html">Animatie</a></li>
+                            <li><a href="../Albums/Komedie.html">Komedie</a></li>
+                            <li><a href="../Albums/Romantiek.html">Romantiek</a></li>
+                            <li><a href="../Albums/Triller.html">Triller</a></li>
+                        </ul>
+                    </li></button>
+					
+                    <li>
+                        <a href="../Albums/filmlijst.html">Filmlijst</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="../Albums/login.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                  <li>
+                    <form class=" navbar-form form-inline my-2 my-lg-0">
+                      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                      <button id="search" class="btn my-2 my-sm-0 glyphicon glyphicon-search" type="submit"></button>
+                    </form>
+                  </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <br><br> 
+        
+    <div class="container-fluid">
+      <div class="row" id="ContactUp">
+        <div class="col-lg-6 col-sm-6 col-xs-6 text-left">
+          <ul class="pager">
+                 <li class="previous"><a href="../index.html">Terug Home</a></li>
+              </ul>
+        </div>
+        <div class="col-lg-6 col-sm-6 col-xs-6 text-right">
+          <ul class="pagination pagination-sm">
+            <li ><a href="../index.html">1</a></li>
+            <li id="2" class="active" ><a href="contact.html">2</a></li>
+            <li class="disabled"><a href="#">3</a></li>
+            
+        </ul>
+        </div>
+      </div>
+    </div>
+    
+<div class="container" id="containerlogin">
+	<div class="row">
+         <div class="col-md-12 col-sm-12">
+    		<!--<div class="" id="loginModal">
+             <!-- <div class="modal-header">-->
+                <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>-->
+                <h3>Heb u reeds een account?</h3>
+              <!--</div>
+              <div class="modal-body">-->
+                <div class="well loginbackground">
+                  <ul class="nav nav-tabs" id="loginnav">
+                    <li class="active"><a href="#login" data-toggle="tab" >Login</a></li>
+                    <li><a href="#create" data-toggle="tab">Creëer een account</a></li>
+                  </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane active in" id="login">
+                          <form role="form" action='../index.html' method="POST">
+                            <fieldset>
+                                 
+                            <div class="form-group">
+                                <!-- Username -->
+                                <label class="control-label"  for="username">Gebruikersnaam</label>
+                                    <div class="controls  ">
+                                        <input type="text" class="form-control logincontrol" id="username" name="username" placeholder="Gebruikersnaam" required="reuired">
+                                     </div>
+                                </div>
+     
+                            <div class="form-group">
+                            <!-- Password-->
+                                <label class="control-label" for="password">Paswoord</label>
+                                      <div class="controls ">
+                                        <input type="password" class="form-control logincontrol" id="password" name="password" placeholder="paswoord"  required="required">
+                                        </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                        <div class="checkbox">
+                                        <label><input type="checkbox" value="remember">Onthou mij</label>
+                                         </div>
+                            </div>
+                  
+             
+     
+     
+                             <div class="form-group">
+                            <!-- Button -->
+                                    <div class="controls">
+                                        <button class="btn btn-success">Login</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                          </form>                
+                        </div>
+                        
+                        
+                        <div class="tab-pane fade" id="create">
+                          <form id="tab" role="form" action='../index.html' method="POST">
+							<fieldset>
+							<div class="form-group">
+                                
+                                <label class="control-label"  for="username">Gebruikersnaam</label>
+                                    <div class="controls">
+                                        <input type="text" class="form-control logincontrol" id="username" name="username" placeholder="Gebruikersnaam"
+											   required="reuired" tabindex="1" >
+                                     </div>
+                            </div>
+							
+							<div class="form-group">
+                                
+                                <label class="control-label"  for="firstname">Voornaam</label>
+                                    <div class="controls">
+                                        <input type="text" class="form-control logincontrol" id="firstname" name="firstname" placeholder="Voornaam"
+											   required="reuired" tabindex="2">
+                                     </div>
+                            </div>
+							
+							<div class="form-group">
+                                
+                                <label class="control-label"  for="name">Familienaam</label>
+                                    <div class="controls">
+                                        <input type="text" class="form-control logincontrol" id="name" name="name" placeholder="Familienaam"
+											   required="reuired" tabindex="3">
+                                     </div>
+                            </div>
+							
+                             <div class="form-group">
+                                
+                                <label class="control-label"  for="mail">Email</label>
+                                    <div class="controls">
+                                        <input type="email" class="form-control logincontrol" id="email" name="email" placeholder="voorbeeld@.be"
+											   required="reuired" tabindex="4">
+                                     </div>
+                            </div>
+							 
+							<div class="form-group">
+                                
+                                <label class="control-label"  for="adres">Adres</label>
+                                    <div class="controls">
+                                        <textarea  class="form-control logincontrol" rows="3" id="comment" name="comment" 
+											   required="required" tabindex="5"></textarea>
+                                     </div>
+                            </div> 
+                               
+                            <div class="coontrols">
+									<button type="submit" class="btn btn-primary pull-right">Creëer uw account</button>
+					     	 </div>
+							</fieldset>
+					                            
+                          </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ </div>
+<!--Geen footer op login maar is aangemaakt als fixed! -->
+<!--
+<footer class="navbar-default navbar-fixed-bottom">
+	<div class="container-fluid text-center">	
+      <div class="col-sm-12">
+            <ol class="breadcrumb">
+              <li>&copy; 2017 IVO Brugge</li>
+              <li class="alert alert-warning"><a href="#disclaimer" data-toggle="collapse" class="alert-link">disclaimer</a></li>
+              <div id="disclaimer" class="collapse">
+                <H6 >IVOMovies is een virtuele oefenfirma. Informatie,transacties en goederen op deze website zijn fictief
+                    en hebben louter educatieve doeleinden.</H6>
+              </div>
+            </ol>
+      </div>
+	</div>
+	 
+</footer>
+-->
+
+
+</body>
+</html>

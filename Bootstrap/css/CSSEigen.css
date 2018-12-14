@@ -1,0 +1,429 @@
+/*
+ * Start Bootstrap - Heroic Features (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+/*body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. 
+}*/
+
+body
+    {
+      margin: 0;
+      padding: 0;
+      background-color: #FFD473;
+    }
+header.jumbotron
+{ 
+    background-color: #FFBF40; 
+    color: #ffffff;
+    height: auto;
+}    
+footer.container-fluid, ol.breadcrumb
+    {
+      margin: 0;
+      padding: 0;
+      background:#ffeecc;
+    }
+.jumbotronTitelTekst
+  {
+   font-weight: bolder;
+   font-family: fantasy;
+   letter-spacing:0.3em;
+   text-shadow: 2px 2px #FF3300;
+   color:#ffddcc ;
+  }
+/* Remove the jumbotron's default bottom margin */
+.jumbotron
+  {
+  height: 200px;
+  margin-bottom: 0;
+  background-attachment: fixed;
+  background-size:cover;
+  }
+    
+    	
+.carousel-caption
+{
+	top:38%;
+	bottom:auto;
+	color: #cccccc;
+}
+
+
+
+.tekstcarouselhome
+{
+  font-weight: bolder;
+  font-family: fantasy;
+  font-size: 40px;  
+  letter-spacing:0.1em;
+  text-shadow: 2px 2px #FF3300;
+  color:#FFCC00 ;
+}
+
+.affix
+{
+  top: 0;
+  width: 100%;
+}
+    
+.affix + .jumbotron
+{
+  padding-top: 70px;
+}
+       
+  
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img
+{
+  width: 70%;
+  margin: auto;
+}
+/* Remove the navbar's default rounded borders and increase the bottom margin */ 
+.navbar
+{
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.populair /*opmaak homepage*/
+{
+	padding: 20px;
+	background: #ff3300;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #333333;
+	font-weight: bold;
+}
+	    
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form, #loginnav.nav.nav-tabs
+{
+  border-color: #CC9933;
+  background-color: #CC9933;
+    
+}
+.navbar-inverse
+{
+  background-color: #CC9933;
+  border-color: #CC9933;
+}
+.navbar-inverse .navbar-nav>li>a, #loginnav.nav.nav-tabs>li>a 
+{
+  color: #333333;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>.open>a ,
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>.open>a:hover , .navbar-inverse .navbar-nav>li>a:hover
+{
+  color: #fff;
+  background-color:#996600 ;
+}
+
+.dropdown-menu>li>a:hover
+{
+  background-color: #996600;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover , #loginnav li>a:active,
+#loginnav li>a:hover, #loginnav li.active, #loginnav li>a:focus, #loginnav li>a:visited,  #loginnav li>a::before
+{
+  color: #fff;
+  background-color: #996600;
+  border: none;
+}
+
+#containerlogin.container
+{
+  width: 500px;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover
+{
+  background-color: #996600;
+}
+
+.navbar-inverse .navbar-toggle
+{
+  border-color: #996600;
+}
+ 
+.btn#top
+{
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.form-control 
+{
+  width: auto;
+  display: inline-block;
+  height: 34px;
+  padding: 6px 6px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #FFeecc;
+  background-image: none;
+  border: 1px solid #996600;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.btn#search
+{
+  background-color:#CC9933;
+    
+}
+.btn#search:hover
+{
+  background-color:#996600;
+}
+.glyphicon-search:hover
+{
+  color:#fff;
+}
+
+table#tbl_filmlijst
+{
+  background:#ffeecc;
+  color: #332200;
+        
+}
+table#tbl_filmlijst thead
+{
+  background-color: #ff3333;
+}
+table#tbl_filmlijst h3 a
+{
+  color: #332200;
+  text-decoration: none;
+}
+table#tbl_filmlijst h3 a:hover
+{
+  color: #332200;
+  text-transform: uppercase;
+        
+}
+table#tbl_filmlijst td img
+{
+  max-height: 100px;
+}
+.wellbackground-filmijst
+{
+  background-color:#FFBF40;
+  color: #ffffff;
+}
+    
+/*Modal Ons */
+.container-fluid#onsfoto
+{
+	margin-top: 0;
+	background:  #332200;
+	color: #ffffff;
+	font-weight: bolder;
+	text-transform: capitalize;
+	padding: 16px;
+		
+}
+.modal
+{
+	background: #FFD473;
+	border: 0;
+	border-color: #FFD473;
+	
+		
+}
+.modal-backdrop
+{
+	width: 70%;
+}
+.modal-header, .modal-body, .modal-footer, div#map-outer, .loginbackground
+{
+	background: #FFBF40;
+  color: #333333;
+}
+.modal-dialogmodal
+{
+	width: 80%;
+	margin-left: 10%;
+	margin-right:10%;
+}
+.ons 
+{
+	background:#ffeecc;
+	color: #332200;
+	font-family: georgia,sans-serif;
+	margin-bottom: 0;
+}
+.ons h3, .ons h4, .ons h5
+{
+	line-height: 120%;
+}
+.logDrie-B
+{
+	color:#cccccc;
+   font-weight: bolder;
+}
+  
+  /*Modal bestelformulier*/
+.modal-dialog#bestelling label
+{
+  width: 200px;
+}
+.modal-dialog#bestelling input, .modal-dialog#bestelling select
+{
+  width: 80%;
+}
+.container-fluid#bestelformulier
+{
+  background: #ffcc66;
+}
+    
+/*Contact.html */
+
+#map-container { height: 100% }
+      
+      
+#map-outer
+{
+  height: 440px; 
+  padding: 20px; 
+  margin-bottom: 20px; 
+  background-color:#FFF
+}
+                    
+textarea#comments.form-control
+{
+  width: 100%;
+}                   
+	 
+  @media all and (max-width: 992px)
+      {
+        #map-outer  { height: 825px }
+        #map-container { height: 345px }
+        
+		
+        .input-group[class*="col-sm-8"]
+        {
+        padding-right: 15px;
+        padding-left: 15px;
+        
+        }
+        input#first_name.form-control,  input#last_name.form-control, input#email.form-control, textarea#comments.form-control
+        {
+           width: 100%;
+           
+           margin-top: 10px;
+        }
+        span#addoncontact.input-group-addon
+        {
+            margin-top: 10px;
+        }
+        
+      
+
+     }
+  
+    
+
+
+  @media (max-width: 767px)
+    {
+      .navbar-inverse .navbar-nav .open .dropdown-menu>li>a
+    {
+        color: #333333;
+    }
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus,.dropdown-menu>li>a:active, .dropdown-menu>li>a.active 
+    .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover, #loginnav li>a:active, #loginnav li>a:hover, .navbar.navbar-nav li.active , .active:focus
+    {
+        color: #fff;
+        background-color: #996600;
+        border: 0;
+    }
+    
+    
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img
+    {
+          width: 100%;
+          margin: auto;
+    }
+    
+    table#tbl_filmlijst td img
+        {
+            height:auto;
+            
+        }
+    #containerlogin.container
+    {
+      width: 90%;
+    }
+        
+    }
+    /*Einde haakjes Media query!!*/
+.fa-facebook-square
+{
+  color: #3b5998;
+  background: #FFD473;
+}
+.fa-pinterest-square
+{
+  color: #c92228;
+  background: #FFD473;
+}
+.fa-twitter-square
+{
+  color: #4099ff;
+  background: #FFD473;
+}
+.fa-twitter-square:hover, .fa-pinterest-square:hover, .fa-facebook-square:hover, .fa-linkedin-square:hover
+{
+  font-size: 35px;
+  
+}
+  
+
+
+
+.hero-spacer {
+    margin-top: 50px;
+}
+
+.hero-feature {
+    margin-bottom: 30px;
+}
+
+/*footer {
+    margin: 50px 0;
+}*/
+
+ .logEen
+    {
+      color: #2952FF; font-weight: bolder;
+    }
+   
+   .logTwee
+    {
+      color:#ABE3E8; font-weight: bolder;
+    }
+  .logDrie
+    {
+      color:#ffffff; font-weight: bolder;
+    }
+   
+  .logoHover:focus, .logoHover:hover
+   {
+    
+    text-decoration: none;
+    text-transform: uppercase;
+   }
+   
+  .logincontrol
+ {
+	width: 100%;
+ }
+ 

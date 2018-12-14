@@ -1,0 +1,383 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<title>IVOMovies webpagina</title>
+    <meta charset="utf-8">
+    <meta name="keywords" lang="nl" content="ivomovies,over ons,populairder,films,contact, ivo, brugge" />
+	  <meta name="author" content="Ivan Dellobel" />
+    <meta name="description" content="Website IVOMovies">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<meta name="google-site-verification" content="google3ebda993fcccc6c4.html">-->
+    <link rel="icon" href="images/LogoIcon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="LogoIcon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+
+<!-- Gebruik van de CSS geleverd door Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.min.css" />
+    <!-- Gebruik van eigen CSS-file om aanpassingen te maken -->
+    <link rel="stylesheet" type="text/css" href="Bootstrap/css/CSSEigen.css" />
+    <!-- Gebruik van jquery -->
+    <script src="Bootstrap/js/jquery-3.1.1.min.js"></script>
+    <!-- Gebruik van Bootstrap Script -->
+    <script src="Bootstrap/js/bootstrap.min.js"></script>
+<style>
+
+</style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                  <span class="logEen"  >IVO</span>
+                  <span class="logTwee">|</span>
+                  <span class="logDrie" >Movies</span></a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    
+                    <li class="active"  >
+						<a href="#" data-toggle="modal" data-target="#basicModal">Over Ons</a>
+						
+                    </li>
+                    <li class="dropdown"><a "class="dropdown-toggle" data-toggle="dropdown">Genres<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+							<li><a href="Albums/Actie.html">Actie</a></li>
+							<li><a href="Albums/Animatie.html">Animatie</a></li>
+                            <li><a href="Albums/Komedie.html">Komedie</a></li>
+                            <li><a href="Albums/Romantiek.html">Romantiek</a></li>
+                            <li><a href="Albums/Triller.html">Triller</a></li>
+                        </ul>
+                    </li></button>
+					
+                    <li>
+                        <a href="Albums/contact.html">Contact</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="Albums/login.html"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                  <li>
+                    <form id="frmSearch" class="  navbar-form form-inline my-2 my-lg-0" method="get" action="users.telenet.be/ivandellobel/">
+                      <input class="form-control mr-sm-2" type="text" id="txtSearch" placeholder="Search" >
+                      <button id="search" class="btn my-2 my-sm-0 glyphicon glyphicon-search" type="submit"></button>
+					  <!--<script type="text/javascript">
+							document.getElementById('frmSearch').onsubmit = function() {
+							window.location = "http://www.google.com/search?q=site:users.telenet.be/ivandellobel/" +
+							document.getElementById('txtSearch').value; return false;};-->
+					  </script>
+                    </form>
+                  </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <br><br> 
+    
+<div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="basicModal " aria-hidden="true">
+    <div class="modal-dialogmodal">
+        <div class="  modal-content">
+            <div class="  modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2 class="text-center">
+					<span class="logEen"  >IVO</span>
+					<span class="logTwee">|</span>
+					<span class="logDrie" >Movies</span>
+				</h2>
+            </div>
+            <div class="modal-body">
+			  
+				<div class=" well container-fluid ons" >
+					<div class="row"  >
+						<div class=" col-md-8 col-sm-6">
+							<h3>In het kort</h3>
+							<h4 style="font-weight: bold "> Onze missie:</h4>
+							
+							<h4 >Wij trachten de meeste recente films die op DVD verkrijgbaar zijn bij u in de huiskamer te brengen,
+							op de best economisch verantwoorde manier.</h4>
+							<h4>We doen dit voor iedereen uit Vlaanderen en Nederland. </h4>
+							
+							<h4>Hiervoor verplichten we ons, de prijzen competitief te houden en continu bij te sturen.</h4>
+							
+							<h4>We verzekeren een vlotte samenwerking en streven naar een duurzaam vertrouwen die we dagdagelijks met onze tevreden
+							klanten opbouwen.</h4>
+							
+							<h4>Door het groeiend succes van ons aanbod, kan je nu ook al onze films 
+							'online bekijken'. Hiervoor werken we in partnership samen met:</h4>
+							
+							</h5>
+							<div class="row">
+								<div class="col-lg-12  col-sm-12 ">
+									<div class=" col-lg-2 col-sm-4  "><img  src="Images/amazon.png" alt="amazon" title="amazon.com">
+									<h6><a href="https://www.amazon.com">www.amazon.com</a></h6></div>
+									
+									<div class=" col-lg-2 col-sm-4 "><img  src="Images/youtube.png" alt="youtube" title="youtube.com">
+									<h6><a href="https://www.youtube.com">www.youtube.com</a></h6></div>
+									
+									<div class=" col-lg-2 col-sm-4 "><img  src="Images/cinemanow.png" alt="cinemanow" title="cinemanow.com">
+									<h6><a href="https://www.cinemanow.com">us.cinemanow.com</a></h6></div>
+									
+									<div class=" col-lg-2 col-sm-4 "><img  src="Images/vd.png" alt="vudu" title="vudu.com">
+									<h6><a href="http://www.vudu.com">www.vudu.com</a></h6></div>
+									
+									<div class="col-lg-2 col-sm-4 "><img  src="Images/itunes.png" alt="itunes" title="itunes.com">
+									<h6><a href="https://apple.com/be/itunes">itunes.apple.com</a></h6></div>
+								
+								</div>
+							</div>
+						</div>
+						<div class="  col-md-4 col-sm-6" >
+							<img src="Images/ons_ivo.png" width="100%" class="img-responsive img-thumbnail">
+						</div>
+				    </div>
+					<div class="row">
+						<div class=" col-md-12">
+							<h3>
+								Over
+								<span class="logEen"  >IVO</span><span class="logTwee">|</span><span class="logDrie-B" >Movies</span>
+							</h3>
+
+							<h4>Wij zijn een moderne webwinkel gelegen in Brugge, actief sedert 2015.</h4>
+							
+							<h4>In mijn kindertijd heb ik vele uurtjes in de filmzalen van Brugge en Vlaamse kust doorgebracht.
+							De passie en liefde voor de film groeide ook verder binnen ons gezin. Dit wilden we graag met iedereen delen.</h4>
+							
+							<h4>Die droom heb ik samen met de steun van mijn lieve echtgenote en partner kunnen realiseren.</h4>
+							
+							<h4>Door het vertrouwen van filmproducenten als Paramount Pictures , Walt Disney en Warner Bross hebben we
+							ons kunnen specialiseren op genres actie, animatie, komedie, romantiek en triller.</h4>
+							
+							<h4>We zijn dan ook heel dankbaar voor het vertrouwen dat we van jullie krijgen en blijven dit met de grootste inzet doen.</h4>
+						</div>
+						
+					</div>
+		      	    
+				</div>
+				<div class=" container-fluid " id="onsfoto"  " >
+					<div class="row text-center" >					
+						<div class=" col-md-6 ">
+							<img src="Images/ons_ivan.jpg" class="img-responsive img-circle img-thumbnail" style="margin: 0 auto">
+							<h4>Ivan Dellobel</h4>
+							<h5>Zaakvoerder</h5>
+							 
+						</div>
+						<div class=" col-md-6">
+							<img src="Images/ons_natalja.jpg" class="img-responsive img-circle img-thumbnail" style="margin: 0 auto">
+							<h4>Natalja Oestinskaja</h4>
+							<h5>Zaakvoerder</h5>
+						</div>
+					</div>	
+				</div>
+			 
+			</div>
+            <div class="modal-footer"   >
+                <button type="button" class="btn btn-default" data-dismiss="modal">Terug</button>
+			</div>    
+          </div>
+    </div>
+</div>  
+
+    <!-- Page Content -->
+    <div class="container" id="homeUp">
+
+        <!-- Jumbotron Header -->
+        <header  class="jumbotron ">
+            <h1 >Uw partner voor de .... momenten! </h1>
+            <h3>Voor jullie, voor de kinderen, samen met de vrienden,....
+                        we stellen u graag de recentste films voor.</h3>
+            <p><a class="btn btn-success btn-large" href="Albums/filmlijst.html">Kijk vlug!</a>
+            </p>
+        </header>        
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                  <li data-target="#myCarousel" data-slide-to="4"></li>
+				  <li data-target="#myCarousel" data-slide-to="5"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+					<div class="item active">
+					  <img class="img-responsive" src="Images/ContractToKill1.jpg" alt="Seagal1" title="Seagal 6"style="height: 400px;">
+						<div class="carousel-caption">
+							<h1 class="tekstcarouselhome">Steven Seagal is terug...</h1>
+							
+						 </div>
+					</div>
+            
+					<div class="item">
+					  <img class="img-responsive" src="Images/ContractToKill2.jpg" alt="Seagal2" title="Seagal 6"style="height: 400px;">
+						<div class="carousel-caption">
+							<h1 class="tekstcarouselhome">..anderhalf uur spanning...</h1>
+						</div>
+					</div>
+                
+					<div class="item">
+					  <img class="img-responsive" src="Images/ContractToKill3.jpg" alt="Seagal3" title="Seagal 6"style="height: 400px;">
+						<div class="carousel-caption">
+							<h1 class="tekstcarouselhome">..actie ten top...</h1>
+						</div>
+						 
+					</div>
+            
+					<div class="item">
+					  <img class="img-responsive" src="Images/ContractToKill4.jpg" alt="Seagal4" title="Seagal 6"style="height: 400px;">
+							<div class="carousel-caption">
+							 <h1 class="tekstcarouselhome">..in een strijd tegen...</h1>
+							</div>
+					   
+					</div>
+                
+                
+					<div class="item">
+					   <img class="img-responsive" src="Images/ContractToKill5.jpg" alt="Seagal5" title="Seagal 6" style="height: 400px;">
+						  <div class="carousel-caption">
+						   <h1 class="tekstcarouselhome">..vijand nummer een...</h1>
+						  </div>
+					 </div>
+                 
+					<div class="item">
+					   <img class="img-responsive" src="Images/ContractToKill6.jpg" alt="Seagal6" title="Seagal 6" style="height: 400px;">
+							<div class="carousel-caption">
+							  <h1 class="tekstcarouselhome">..TERRORISME!</h1>
+							</div>
+					 </div>
+                </div>
+                
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+        </div>
+
+
+        <hr>
+
+        <!-- Title -->
+        <div class="row">
+            <div class="col-lg-12" >
+                <h2 class="bg-success populair" >Populairder dan ooit!</h2>
+            </div>
+        </div>
+        <!-- /.row--> 
+
+        <!-- Page Features --> 
+        <div class="row text-center">
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <a  href="Albums/Triller.html#InfernoLook"><img src="Images/inferno1.jpg" alt="Inferno" title=" Inferno"></a>
+                    <div class="caption">
+                        <h3>INFERNO</h3>
+                        <p>Tom Hanks in een glansrol.</p>
+                        <p>
+                           <a href="Albums/InfoInferno.html" class="btn btn-success">Lees meer</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                   <a href="Albums/Actie.html#takelook"> <img src="Images/theTake.jpg" alt="The Take" title="The Take"></a>
+                    <div class="caption">
+                        <h3>THE TAKE</h3>
+                        <p>Idris Elba.</p>
+                        <p>
+                            <a href="Albums/InfoTheTake.html" class="btn btn-success">Lees meer</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <a href="Albums/Animatie.html#icelook"><img src="Images/iceAce1.jpg" alt="Ice Ace" title="Collision Course"></a>
+                    <div class="caption">
+                        <h3>ICE ACE 5</h3>
+                        <p>Collision Course.</p>
+                        <p>
+                             <a href="Albums/InfoIceAceCollision.html" class="btn btn-success">Lees meer</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 hero-feature">
+                <div class="thumbnail">
+                    <a href="Albums/Romantiek.html#heavenlook"><img src="Images/heavenSent.jpg" alt="Heaven Sent" title="Heaven Sent"></a>
+                    <div class="caption">
+                        <h3>HEAVEN SENT</h3>
+                        <p>Ware liefde wint!</p>
+                        <p>
+                             <a href="Albums/InfoHeavenSent.html" class="btn btn-success">Lees meer</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+    </div>
+    <!--Button page up -->
+    <div class="row text-right">
+		<div class="col-sm-12 ">
+		  <a href="#homeUp" title="Top">
+			<button id="top" type="button" class="btn btn-primary btn-sm back-to-top glyphicon glyphicon-chevron-up "> Top</button>
+		  </a>
+		</div>
+    </div>
+    <!-- Footer -->
+    <footer class="container-fluid text-center">
+		<div class="col-sm-12">
+			  <ol class="breadcrumb">
+				<li>&copy; 
+                    <span>
+                        <script type="text/javascript">
+                            var theDate = new Date()
+                            document.write(theDate.getFullYear())
+                        </script>
+                        </span> IVO Brugge</li>
+				<li class="alert alert-warning"><a href="#disclaimer" data-toggle="collapse" class="alert-link">disclaimer</a></li>
+				  <div id="disclaimer" class="collapse">
+					<H6 >IVOMovies is een virtuele oefenfirma. Informatie,transacties en goederen op deze website zijn fictief
+						en hebben louter educatieve doeleinden.</H6>
+				  </div>
+			  </ol>
+		</div>
+    </footer>
+
+
+    
+
+</body>
+
+</html>
